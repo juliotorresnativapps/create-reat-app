@@ -1,0 +1,64 @@
+@import "~styles/colors";
+@import "~styles/helpers";
+
+.tab-container {
+  border-bottom: none !important;
+  height: em(32);
+  .nav>li>a {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+  &__tab-item {
+    background: $pale-white !important;
+    box-shadow: em(0) em(0) em(5) $gray-border !important;
+    height: 100% !important;
+    margin-bottom: em(0.3) !important;
+    margin-left: em(0.3) !important;
+    &_first {
+      background: $pale-white !important;
+      border-top-left-radius: em(5);
+      box-shadow: 0px 0px 5px $gray-border !important;
+      height: 100% !important;
+      margin-bottom: em(0.3) !important;
+      margin-left: em(0.3) !important;
+    }
+    &_last {
+      background: $pale-white !important;
+      border-top-right-radius: em(5);
+      box-shadow: 0px 0px 5px $gray-border !important;
+      height: 100% !important;
+      margin-bottom: em(0.3) !important;
+      margin-right: em(0.3) !important;
+    }
+  }
+  &-container>li {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+  }
+  &__tab-item-label {
+    border: none !important;
+    color: $gray-text !important;
+    display: block;
+    font-family: Nunito !important;
+    height: 100%;
+    padding-bottom: 0 !important;
+    padding-top: em(5) !important;
+    &_active {
+      border: none !important;
+      color: $gray-text !important;
+      display: block;
+      font-family: Nunito !important;
+      padding-bottom: 0 !important;
+      padding-top: em(5) !important;
+      height: 100%;
+    }
+    &:hover,
+    &_active {
+      background: $opaque-purple !important;
+      border: none !important;
+      box-shadow: none !important;
+      color: $pale-white !important;
+    }
+  }
+}

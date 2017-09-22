@@ -1,0 +1,22 @@
+@import "~styles/helpers";
+
+$space: em(24);
+$space-small: calc(#{$space} / 2);
+// Boxed View
+$form-padding-normal: em(280);
+$form-padding-large-x: em(66);
+$form-padding-large-top: em(42);
+$form-padding-large-bottom: em(34);
+$form-border-radius: em(20);
+$form-width-large: em(668);
+$form-help-font-size: em(12);
+$field-margin-bottom: em(7);
+$field-margin-bottom-large: em(34);
+$input-padding: em(16);
+// Base
+$input-border-radius: em(5);
+$input-font-size: em(14);
+$input-height: rem(36);
+//SideBar
+$side-bar-width: em(92);
+

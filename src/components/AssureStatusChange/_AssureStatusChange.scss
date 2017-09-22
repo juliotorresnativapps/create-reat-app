@@ -1,0 +1,17 @@
+@import "~styles/variables";
+
+.assure-status {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__message {
+    text-align: center;
+    margin-bottom: em(35);
+  }
+
+  button:first-child {
+    margin-right: em(17);
+  }
+}

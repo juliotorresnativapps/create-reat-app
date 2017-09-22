@@ -1,0 +1,35 @@
+@import "~styles/colors";
+@import "~styles/helpers";
+
+.top-nav-bar {
+  background: $brand;
+  height: em(55) !important;
+  padding-top: em(15);
+  position: relative;
+  width: 100%;
+
+  &__content {
+    padding: 0 em(35);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  &__label {
+    color: $pale-white !important;
+    font-family: Nunito;
+    font-size: em(19) !important;
+    font-style: normal !important;
+    font-weight: bolder;
+    margin-left: em(10) !important;
+    margin-right: em(5) !important;
+  }
+
+  &__breadcrumb {
+    background-color: $pale-white !important;
+    border: none !important;
+    color: $gray-text !important;
+    margin-left: em(10);
+  }
+}

@@ -1,0 +1,48 @@
+@import "~styles/colors";
+@import "~styles/helpers";
+
+.paginator {
+  display: block;
+  margin-bottom: em(38);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: em(38);
+  &__content {
+    float: right;
+  }
+  &__label {
+    color: $opaque-purple !important;
+    font-family: "Nunito";
+    font-size: em(12) !important;
+    font-weight: bold;
+    margin-left: em(5);
+    margin-right: em(5);
+  }
+  &__input {
+    border-radius: rem(5);
+    border: 2px solid $gray-border !important;
+    color: $opaque-purple !important;
+    font-family: "Nunito";
+    font-size: em(10) !important;
+    font-weight: bold;
+    height: em(35) !important;
+    text-align: center !important;
+    vertical-align: top;
+    width: em(125);
+  }
+  &__group {
+    width: em(50);
+  }
+  &__button {
+    background: $light-gray !important;
+    border: none !important;
+    color: #b6b6b6 !important;
+    font-size: em(10) !important;
+    font-family: "Nunito";
+    height: em(35) !important;
+    margin-bottom: em(5) !important;
+    margin-left: em(5);
+    margin-right: em(5);
+    text-align: justify !important;
+  }
+}

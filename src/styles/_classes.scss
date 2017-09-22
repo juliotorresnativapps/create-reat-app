@@ -1,0 +1,56 @@
+.analitico-logo {
+  background-image: url("~images/Group 600@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: em(30);
+  height: 100%;
+  margin: 0 auto rem(7) auto !important;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 100%;
+
+  &--flat {
+    background-image: url("~images/Group 53@2x.png");
+    margin: 0 auto em(16) auto !important;
+  }
+}
+
+.borderless {
+  border: none !important;
+}
+
+.title {
+  &__label {
+    color: $opaque-purple !important;
+    font-family: "Nunito";
+    font-size: em(19);
+    letter-spacing: em(1.5);
+    text-align: left;
+  }
+}
+
+.img{
+
+  &-floating {
+    position: absolute;
+  }
+  &-left {
+    left: 0;
+  }
+  &-top {
+    top: 0;
+  }
+  &_back {
+    width: 34px;
+    border: 1px solid white!important;
+    border-top-left-radius: em(3);
+    border-bottom-right-radius: em(3);
+    box-shadow: em(0) em(0) em(5) $shadow !important;
+  }
+}
+
+.input--glyph {
+  padding-left: calc(#{$space} * 1.5) !important;
+}

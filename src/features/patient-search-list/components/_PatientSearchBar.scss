@@ -1,0 +1,16 @@
+@import "~styles/colors";
+@import "~styles/helpers";
+
+.patient-search-bar{
+  height: em(300) !important;
+  //width: 100%;
+  padding-top: em(5);
+  padding-left: em(5);
+  padding-right: em(5);
+}
+
+.patient-search-bar__list-item{
+  padding-top: em(5);
+  padding-left: em(20);
+  padding-right: em(5);
+}

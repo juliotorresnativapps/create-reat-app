@@ -1,0 +1,49 @@
+
+
+
+div.outside-container nav.navbar.navbar-default {
+    background: white;
+    margin-bottom: 0;
+    border: 0 !important
+}
+
+
+div.outside-container nav.navbar.navbar-default ul li a {
+    color: #222 !important
+}
+
+div.outside-container nav.navbar.navbar-default ul li a,
+
+div.outside-container nav.navbar.navbar-default ul li:focus a {
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    border-right: 1px solid #ccc;
+}
+div.outside-container nav.navbar.navbar-default ul li a:focus {
+    background: rgba(0, 0, 0, 0) !important
+}
+
+div.outside-container nav.navbar.navbar-default ul li a {
+    font-weight: bold;
+    color: #858586 !important;
+}
+
+div.outside-container nav.navbar.navbar-default ul li a:hover, div.outside-container nav.navbar.navbar-default ul li.open a.dropdown-toggle {
+    background: white;
+    border-bottom: 3px solid #4b539b
+}
+
+
+div.outside-container nav.navbar.navbar-default ul.nav.navbar-nav li.dropdown.open ul.dropdown-menu li a:hover,
+div.outside-container nav.navbar.navbar-default ul.nav.navbar-nav li.dropdown.open ul.dropdown-menu li a:focus,
+div.outside-container nav.navbar.navbar-default ul.nav.navbar-nav li.dropdown.open ul.dropdown-menu li.active a {
+    background: #4b539b !important;
+    color: white !important;
+}
+
+div.outside-container nav.navbar.navbar-default ul.nav.navbar-nav li.dropdown.open ul.dropdown-menu li:not(:last-child) {
+    border-bottom: 1px solid #ccc
+}
+
+ ul.dropdown-menu {
+    padding: 0 !important
+}

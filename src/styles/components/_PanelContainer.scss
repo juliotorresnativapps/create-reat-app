@@ -1,0 +1,90 @@
+@import "~styles/variables";
+@import "~styles/colors";
+@import "~styles/helpers";
+
+.outside-container {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  width: 92.8125% !important;
+}
+
+.panel-container {
+  background: $pale-lavanda;
+  height: calc(100vh - 6.8755em) !important;
+  padding-bottom: em(35) !important;
+  padding-left: em(35) !important;
+  padding-right: em(35) !important;
+  padding-top: em(35) !important;
+  width: 100%;
+  overflow: scroll;
+}
+
+.panel {
+  margin-bottom: 0 !important;
+
+}
+
+.panel-row {
+  display: inline-block;
+  height: 50%;
+  width: 100%;
+  &_top {
+    margin-bottom: 1% !important;
+  }
+  &_full {
+    height: 100%;
+  }
+}
+
+.panel-box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  border-radius: em(5);
+  box-shadow: em(0) em(0) em(5) $shadow !important;
+  cursor: pointer;
+  display: inline-block;
+  height: 99%;
+  padding-left: em(35) !important;
+  width: 49.5%;
+  &_cost {
+    background-image: url('~images/Group 907@3x.png');
+    margin-right: 1%;
+  }
+  &_predictive {
+    background-image: url('~images/Group 9935@3x.png');
+  }
+  &_prevalence {
+    background-image: url('~images/Group 9932@3x.png');
+  }
+  &_network {
+    background-image: url('~images/Group 9933@3x.png');
+    margin-right: 1%;
+  }
+  &_tabbed {
+    border-radius: em(5);
+    border-top-left-radius: em(0) !important;
+    box-shadow: em(0) em(0) em(5) $shadow !important;
+    padding-bottom: em(35) !important;
+    padding-left: em(35) !important;
+    padding-right: em(35) !important;
+  }
+  &_full {
+    width: 100%!important;
+  }
+  &_left {
+    margin-right: 1%!important;
+  }
+  &_chart {
+    position: relative;
+    padding: em(35) !important;
+    padding-top: 10px!important;
+  }
+
+}
+
+.overflow-scroll{
+  overflow-x: auto !important;
+}

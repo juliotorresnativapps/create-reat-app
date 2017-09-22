@@ -1,0 +1,12 @@
+@import '~styles/components/TopBar';
+@import '~styles/components/PanelContainer';
+
+.summary {
+  &__label {
+    color: $opaque-purple !important;
+    font-family: "Nunito";
+    font-size: em(19);
+    letter-spacing: em(1.5);
+    text-align: left;
+  }
+}

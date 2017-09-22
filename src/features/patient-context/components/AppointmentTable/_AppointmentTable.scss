@@ -1,0 +1,80 @@
+@import "~styles/colors";
+@import "~styles/helpers";
+
+.appointment-table{
+  margin-bottom: em(5) !important;
+  border: none !important;
+
+
+  &__upper-row{
+    height: em(31) !important;
+    &-cell{
+      width: 20% !important;
+      padding-left: 3% !important;
+      border-top: none !important;
+      text-align: left;
+      padding-bottom: em(1) !important;
+      padding-top: em(2) !important;
+    }
+  }
+
+  &__lower-row{
+    &-cell{
+      width: 15% !important;
+      padding-left: 1% !important;
+      border-top: none !important;
+      text-align: left;
+      padding-bottom: em(10) !important;
+      &_w11{
+        width: 11% !important;
+        border-top: none !important;
+        text-align: left;
+        padding-bottom: em(10) !important;
+      }
+      &_w11p{
+        width: 11% !important;
+        padding-left: 3% !important;
+        border-top: none !important;
+        text-align: left;
+        padding-bottom: em(10) !important;
+      }
+      &_w5{
+        width: 5% !important;
+        padding-left: 0.5% !important;
+        border-top: none !important;
+        text-align: left;
+        padding-bottom: em(10) !important;
+      }
+      &_w10{
+        width: 10% !important;
+        padding-left: 0.5% !important;
+        border-top: none !important;
+        text-align: left;
+        padding-bottom: em(10) !important;
+      }
+    }
+  }
+}
+
+.text_blue{
+  color: $opaque-purple;
+  font-weight: bold;
+  font-family: Kanit;
+  font-size: em(14);
+}
+
+.text_gray{
+  color: $gray-text;
+  font-weight: bold;
+  font-family: Nunito;
+  font-size: em(14);
+}
+
+.text_black{
+  color: black !important;
+  font-weight: bold !important;
+  font-family: Nunito;
+  font-size: em(14);
+  font-weight: bolder;
+
+}

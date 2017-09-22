@@ -1,0 +1,41 @@
+@import "~styles/variables";
+@import "~styles/colors";
+@import "~styles/helpers";
+
+.anlt-btn {
+  border: none;
+  border-radius: em(5);
+  font-family: "Nunito", sans-serif !important;
+  height: rem(29);
+  padding: 0 !important;
+  width: rem(110);
+  &--primary {
+    background-color: $accent-color !important;
+    color: white !important;
+    font-size: em(13) !important;
+  }
+  &--brand {
+    background-color: $brand !important;
+    color: white !important;
+    font-size: em(13) !important;
+  }
+  &--default{
+    background-color: $close-button-color !important;
+  }
+  &--small {
+    width: rem(75);
+  }
+  &--large {
+    width: rem(133);
+  }
+  &--shadow {
+    box-shadow: 0px 0px rem(10) $shadow !important;
+  }
+  &--crud {
+    background-color: $pale-green !important;
+    color: white;
+    height: $input-height;
+    font-family: "Kanit";
+    width: rem(153) !important;
+  }
+}

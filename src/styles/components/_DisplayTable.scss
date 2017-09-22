@@ -1,0 +1,121 @@
+@import "~styles/variables";
+@import "~styles/colors";
+@import "~styles/helpers";
+@import "~styles/placeholders";
+
+span.search-icon {
+  background: url("~images/ic_search_white.png") no-repeat;
+  @extend %input-icon;
+}
+
+.display-table {
+  background-color: white;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-bottom: 1px solid lightgray !important;
+  width: 100%;
+
+  thead tr th {
+    text-align: left;
+    padding-left: 50px;
+    border-top: 1px solid lightgray !important;
+    border-right: 1px solid lightgray;
+    &:first-child {
+      border-left: 1px solid lightgray;
+    }
+  }
+
+  tbody tr td {
+    border-top: none !important;
+    border-right: 1px solid lightgray;
+    &:first-child {
+      border-left: 1px solid lightgray;
+    }
+    font-family: "Nunito";
+    text-align: left;
+    padding-left: 45px !important;
+
+    &:last-child {
+      padding-left: 0 !important;
+    }
+  }
+
+  tr:first-child {
+    th:first-child {
+      border-top-left-radius: 5px;
+    }
+    th:last-child {
+      border-top-right-radius: 5px;
+    }
+  }
+
+  &__table-header {
+    cursor: auto !important;
+    background: $gray !important;
+    border-bottom: none !important;
+    color: $opaque-purple !important;
+    font-family: "Kanit";
+    font-size: em(15);
+    font-weight: bolder !important;
+    padding-left: em(32) !important;
+    position: relative;
+    &__arrow-icon {
+      position: absolute;
+      height: rem(7);
+      width: rem(7);
+    }
+    .arrow-icon-asc {
+      bottom: 55%;
+    }
+    .arrow-icon-desc {
+      top: 55%;
+    }
+    &__label {
+      display: block;
+      padding-left: em(16);
+    }
+  }
+
+  &__search {
+    margin-bottom: em(16);
+    span.search-icon {
+      left: 3%;
+      top: 69%;
+    }
+  }
+
+  &__input {
+    border: 1px solid $gray-border;
+    border-radius: $input-border-radius;
+    float: left;
+    position: relative;
+    width: 30%;
+  }
+
+  &__toggler {
+    float: right;
+    text-align: right;
+  }
+
+  &__table-icon {
+    margin-right: em(5) !important;
+    margin-left: em(5) !important;
+  }
+
+  &__inactive-row {
+    background-color: $gray-border !important;
+    color: white;
+    font-family: "Nunito";
+  }
+
+  &__row {
+    color: $gray-text !important;
+    font-family: "Nunito";
+    padding-left: em(32) !important;
+  }
+}
+
+.table-striped.nested > tbody > tr:nth-child(4n-3) > td,
+.table-striped.nested > tbody > tr:nth-child(4n-3) > th {
+   background-color: white !important;
+}

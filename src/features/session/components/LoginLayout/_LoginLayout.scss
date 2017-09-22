@@ -1,0 +1,38 @@
+@import "~styles/variables";
+@import "~styles/components/BoxedView";
+@import "~styles/components/Button";
+
+.boxed-view {
+  &__row {
+    margin-bottom: calc(#{$field-margin-bottom} * 2) !important;
+
+    &:last {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.layout {
+  background-image: url("~images/Group 243@2x.png");
+  background-size: cover;
+}
+
+span.user-icon {
+  background: url("~images/ic_account_circle_24px.png") no-repeat;
+  @extend %input-icon;
+}
+
+span.lock-icon {
+  background: url("~images/ic_lock_outline_24px.png") no-repeat;
+  @extend %input-icon;
+}
+
+.link {
+  &--black {
+    color: $primary-text !important;
+  }
+  &--white {
+    color: $pale-white !important;
+  }
+}
+

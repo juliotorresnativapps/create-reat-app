@@ -1,0 +1,77 @@
+html, body {
+  font-size: 16px !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+form {
+  font-family: "Nunito", sans-serif !important;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border-color: transparent !important;
+  border-radius: $input-border-radius;
+  font-family: "Nunito", sans-serif !important;
+  font-size: $input-font-size;
+  height: $input-height;
+  padding: em(16);
+  width: 100%;
+}
+
+input[type=checkbox], input[type=radio] {
+  margin-top: 0 !important;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
+
+::-webkit-input-placeholder {
+  color: $input-secondary-text-color;
+  font-family: "Nunito", sans-serif !important;
+  font-size: em(14);
+}
+
+::-moz-placeholder {
+  color: $input-secondary-text-color;
+  font-family: "Nunito", sans-serif !important;
+  font-size: em(14);
+}
+
+:-ms-input-placeholder {
+  color: $input-secondary-text-color;
+  font-family: "Nunito", sans-serif !important;
+  font-size: em(14);
+}
+
+:-o-input-placeholder {
+  color: $input-secondary-text-color;
+  font-family: "Nunito", sans-serif  !important;
+  font-size: em(14);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Some browsers will not display the caret when using calc, so we put the fallback first */
+  background: url("~images/arrow down@2x.png") white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+  background: url("~images/arrow down@2x.png") white no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
+}
+
+select[multiple] {
+  background-image: none !important;
+}

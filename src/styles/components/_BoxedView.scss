@@ -1,0 +1,129 @@
+@import "~styles/variables";
+@import "~styles/colors";
+@import "~styles/helpers";
+@import "~styles/placeholders";
+
+.form-group {
+  margin-bottom: em(7);
+}
+
+.boxed-view {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  &--tall {
+    height: em(246);
+  }
+
+  &__close {
+    background-color: $close-button-bg;
+    border: none;
+    border-radius: 50%;
+    color: $close-button-color;
+    font-family: "Nunito";
+    padding: em(1) em(7);
+    position: absolute;
+    right: 19px;
+    top: 16px;
+  }
+
+  &__form {
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    &--transparent {
+      background: transparent;
+    }
+    &--small {
+      width: $form-padding-normal;
+    }
+    &--large {
+      border-radius: $form-border-radius;
+      padding: $form-padding-large-top $form-padding-large-x $form-padding-large-bottom $form-padding-large-x;
+      width: $form-width-large;
+    }
+  }
+
+  &__legend {
+    color: $opaque-purple;
+    font-size: em(14);
+    font-weight: bold;
+  }
+
+  &__title {
+    border: none;
+    color: $input-subtitle-color !important;
+    font-size: em(14);
+    margin-top: rem(0);
+    margin-bottom: rem(35);
+    text-align: center !important;
+    width: 100%;
+  }
+
+  &__row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: $field-margin-bottom !important;
+    > div[class^="col-xs-"],
+    > fieldset[class^="col-xs-"] {
+      width: 49.26% !important;
+    }
+  }
+  &__field {
+    padding: 0 !important;
+    position: relative;
+  }
+  &__row  &__field:first-child {
+    margin-right: $field-margin-bottom !important;
+  }
+
+  &__checkbox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__checkbox-label {
+    margin-right: rem(20);
+  }
+
+  &__input {
+    color: $input-text-color !important;
+    background-color: $input-background  !important;
+    border: none !important;
+    border-radius: $input-border-radius;
+    font-family: "Nunito", sans-serif !important;
+    font-size: $input-font-size;
+    height: $input-height;
+    padding-left: $input-padding !important;
+    width: 100%;
+    position: relative;
+  }
+
+  &__fieldset-title {
+    font-size: em(13);
+    margin-left: rem(5);
+  }
+
+  &__submit {
+    margin-top: em(35) !important;
+    text-align: center;
+  }
+  &__help {
+    display: block;
+    font-size: $form-help-font-size;
+    margin-top: em(16);
+    text-align: center;
+  }
+
+  &__inline-checkbox {
+    margin-right: em(5);
+
+    &:last {
+      margin-right: 0;
+    }
+  }
+}

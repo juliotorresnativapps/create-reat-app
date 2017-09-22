@@ -1,0 +1,88 @@
+@import "~styles/colors";
+@import "~styles/helpers";
+
+.filter-menu {
+  border-radius: 0 !important;
+  box-shadow: 0px 0px 3px $shadow !important;
+  margin-bottom: 0 !important;
+  min-height: em(10) !important;
+
+  &-nav{
+    border-bottom: none !important;
+  }
+}
+
+.filter-menu__item {
+  border: em(1) solid $gray !important;
+  border-bottom: 0 solid transparent !important;
+  border-color: $gray-text !important;
+  border-top: none !important;
+  border-left: none !important;
+  &-label {
+    border: none !important;
+    border-bottom: none !important;
+    color: $gray-text !important;
+    font-family: "Nunito";
+    &:hover {
+      background: $pale-white !important;
+      border-bottom: em(3) solid $opaque-purple !important;
+      color: $opaque-purple !important;
+    }
+    &_selected {
+      background: $pale-white !important;
+      color: $opaque-purple !important;
+      font-family: "Nunito";
+    }
+  }
+  &-arrow {
+    color: $gray-text !important;
+    font-size: x-small;
+    &_selected {
+      color: $arrow-selected !important;
+      font-size: x-small;
+    }
+  }
+  &_selected {
+    border-bottom: em(3) solid $opaque-purple !important;
+  }
+  &-drop-down {
+    border: none !important;
+    border-bottom-left-radius: em(5) !important;
+    border-bottom-right-radius: em(5) !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    min-width: 0 !important;
+    &-item {
+      color: $gray-text !important;
+      &_selected {
+        background: $opaque-purple !important;
+        color: $pale-white !important;
+        &-last {
+          background: $opaque-purple !important;
+          color: $pale-white !important;
+          border-bottom-left-radius: em(5) !important;
+          border-bottom-right-radius: em(5) !important;
+        }
+      }
+    }
+    &-divider {
+      margin: 0 !important;
+      background: $gray-text !important;
+      width: 70%;
+      margin-top: em(-1) !important;
+      float: right;
+    }
+  }
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  font-family: "Nunito";
+  background: $pale-white !important;
+  color: $opaque-purple !important;
+  background: $pale-white !important;
+  border: none !important;
+  border-bottom-color: transparent !important;
+  border-bottom: em(3) solid $opaque-purple !important;
+}

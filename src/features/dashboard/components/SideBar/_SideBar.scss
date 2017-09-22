@@ -1,0 +1,158 @@
+@import '~styles/components/PanelContainer';
+@import "~styles/colors";
+@import "~styles/helpers";
+
+.side-bar {
+  background-image: url("../../../../../images/Group 243.png");
+  background-position: 67% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: calc(100vh + 55px) !important;
+  overflow: hidden;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  width: 7.1875% !important;
+  .panel {
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  .panel-group .panel+.panel {
+    margin-top: 0 !important;
+  }
+
+  &__logo {
+    background: $dark-purple;
+    padding-top: 100%;
+    position: relative;
+    width: 100%;
+  }
+  &__logo img {
+    height: 40.2173%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 29.3478%;
+  }
+  &__item {
+    background: $pale-white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    cursor: pointer;
+    border: 0 !important;
+    height: em(92);
+    position: relative;
+    width: 100%;
+    &.collapsed {
+      background: transparent !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      background-size: 45% !important;
+    }
+    &.collapsed &-label {
+      color: $pale-white !important;
+      font-family: "Nunito";
+      font-size: 70% !important;
+      font-style: normal !important;
+      font-weight: bold !important;
+      margin-top: em(7);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &-content {
+      left: 50%;
+      position: absolute;
+      top: 85%;
+      transform: translate(-50%, -50%);
+    }
+    &-label {
+      color: $opaque-purple !important;
+      font-family: "Nunito";
+      font-size: 70% !important;
+      font-style: normal !important;
+      font-weight: bold !important;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: em(7);
+    }
+    &-label_selected {
+      color: $opaque-purple !important;
+      font-family: "Nunito";
+      font-size: em(12) !important;
+      font-style: normal !important;
+      font-weight: bold !important;
+      margin-left: auto;
+      margin-top: em(5);
+      margin-right: auto;
+    }
+  }
+  &__drop-down {
+    background: $pale-white;
+    width: 100%;
+    &__item-container {
+      height: em(30);
+    }
+    &__item-container_selected {
+      background: $opaque-purple !important;
+      height: em(30);
+    }
+    &-label {
+      color: $gray-text !important;
+      display: block;
+      font-family: "Nunito";
+      font-size: em(12) !important;
+      font-style: normal !important;
+      font-weight: bold;
+      height: 100%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-decoration: none !important;
+      &__content {
+        border-bottom: 1px solid $shadow;
+        display: block;
+        margin: 0 auto em(16) auto;
+        width: 75%;
+      }
+      &_selected {
+        background: $opaque-purple !important;
+        color: $pale-white !important;
+      }
+    }
+    &-label_selected  &-label__content {
+      border: none;
+    }
+  }
+  &__item-label_selected &__drop-down-label__content {
+    border: none;
+  }
+  .analytics {
+    background-image: url("~images/Group 13192ss@2x.png");
+    &.collapsed {
+      background-image: url("~images/Group 1319@2x.png") !important;
+    }
+  }
+  .admin {
+    background-image: url("~images/Group 13092ss@2x.png");
+    &.collapsed {
+      background-image: url("~images/Group 1309@2x.png") !important;
+    }
+  }
+  .settings {
+    background-image: url("~images/Group 13232ss@2x.png");
+    &.collapsed {
+      background-image: url("~images/Group 1323@2x.png") !important;
+    }
+  }
+  .patients {
+    background-image: url("~images/Group 1318ss@2x.png");
+    &.collapsed {
+      background-image: url("~images/Group 1318@2x.png") !important;
+    }
+  }
+  .logout.collapsed {
+    background-image: url("~images/Group 1320@2x.png") !important;
+  }
+}

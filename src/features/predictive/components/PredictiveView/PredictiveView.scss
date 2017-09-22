@@ -1,0 +1,96 @@
+.chip {
+    display: inline-block;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.closebtn {
+    padding-left: 10px;
+    color: #888;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: #000;
+}
+
+
+
+
+.nav.nav-tabs .active .nav-link {
+    border: 0;
+    border-bottom: 3px solid #4b539b,
+}
+
+.nav.nav-tabs .nav-item {
+    width: 50%;
+    text-align: center
+}
+
+div.react-date-picker__nav-bar-arrow:nth-child(1), div.react-date-picker__nav-bar-arrow:nth-child(5) {
+    display: none !important
+}
+
+div.react-date-picker__month-view-row > div:nth-child(1) {
+    display: none !important
+}
+
+div.react-date-picker__month-view-week-day-name:nth-child(2) {
+    content: "Joe's Task:" !important
+}
+
+.react-date-picker__month-view-day--next-month, .react-date-picker__month-view-day--prev-month {
+    visibility: hidden
+}
+
+.react-date-picker__calendar {
+    border: 0
+}
+
+
+
+.react-date-picker__nav-bar-date, .nav-link, .react-date-picker__month-view-day--active, .react-date-picker__month-view-cell {
+    color: #4b539b !important
+}
+
+.react-date-picker__month-view-day--active {
+    border: 0 !important
+}
+
+.react-date-picker__month-view-day--weekend-highlight, .react-date-picker__month-view-day--today {
+    color: black !important
+}
+
+.title-filter {
+    background-color: #4b539b !important;
+    color: white;
+    line-height: 50px
+}
+
+.cost .btn-primary.dropdown-toggle {
+    background-color: #91a6f4 !important;
+    color: white !important;
+    border: 0 !important;;
+    border-color: rgba(0,0,0,0) !important;
+    height: 30px;
+    padding: 0 10px 0 10px !important;
+}
+
+.cost .btn-primary.dropdown-toggle:focus, .btn-primary.dropdown-toggle:hover {
+    border: 0;
+    border-color: rgba(0,0,0,0)
+}
